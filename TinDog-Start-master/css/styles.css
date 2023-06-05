@@ -5,12 +5,15 @@ body {
 #title {
     background-color: #ff4c68;
     color: white;
+   
 
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
+    
 }
+
 
 h1 {
 
@@ -23,6 +26,7 @@ h2{
     font-size:3rem;
     line-height: 1.5;
 }
+
 p{
     color: #8f8f8f;
 }
@@ -34,6 +38,8 @@ p{
 }
 .navbar{
     padding:0 30px 30px 0px;
+   
+   
 }
 .nav-item{
     padding: auto 20px;
@@ -48,18 +54,25 @@ p{
 .d-button{
     margin: 5% 3% 5% 0%;
 }
-
-/* title image */
+/* 
+title image */
 .title-image{
     transform: rotate(25deg);
-    width: 60%;
+    position: absolute;
+    width: 25%;
+    right: 20%;
 }
 
 /* features section  */
-
+#features{
+    background-color: white;
+    padding: 7% 15%;
+    position: relative;
+    z-index: 1;    
+}
 .features-container{
     text-align: center;
-    padding: 7% 15%;
+    padding: 4.5%;
 
 }
 .icon{
@@ -106,4 +119,45 @@ p{
 }
 .pricing-col{
     padding: 3% 2%;
+}
+
+/* cta section  */
+#cta{
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 5% 15%;
+}
+.h3-footer{
+    font-family:'Montserrat', sans-serif;
+    color: white;
+    font-size: 3rem;
+}
+#footer{
+    background-color: white;
+    padding: 6% 15%;
+    text-align: center;
+}
+.fa-footer{
+    padding: 30px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1028px){
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        position: static;
+        transform: rotate(0);
+        width: 50%;
+    }
 }
